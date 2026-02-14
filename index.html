@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Form</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #fff7f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .pura {
+        background: #ffffff;
+        padding: 45px;
+        width: 100%;
+        max-width: 380px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(255, 140, 80, 0.15);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-weight: 700;
+        color: #444;
+    }
+
+    .group {
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #777;
+    }
+
+    .group input {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 14px;
+        border: 1px solid #f3d2c3;
+        outline: none;
+        background: #fffdfc;
+        transition: all 0.25s ease;
+    }
+
+    .group input:focus {
+        border-color: #ff914d;
+        box-shadow: 0 0 0 4px rgba(255, 145, 77, 0.15);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 14px;
+        border: none;
+        background: #ff914d;
+        color: white;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+        background: #ff7a26;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 145, 77, 0.25);
+    }
+</style>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+</head>
+
+<body>
+    <div class="pura">
+        <h2>Quiz App</h2>
+        <form onSubmit= "checkName(event)" >
+            <div class="group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <button class="btn">Continue</button>
+        </form>
+    </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./welcome.js">
+        
+    </script>
+</body>
+</html>

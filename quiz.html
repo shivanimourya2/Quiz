@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #fff7f2;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    #quiz-container {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(255, 140, 80, 0.15);
+        width: 90%;
+        max-width: 420px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    #playerbox {
+        color: #777;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    #question {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .option-btn {
+        background: #ff914d;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 14px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.25s ease;
+    }
+
+    .option-btn:hover {
+        background: #ff7a26;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 145, 77, 0.25);
+    }
+
+    .option-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    #next-btn {
+        margin-top: 20px;
+        padding: 12px;
+        width: 100%;
+        border-radius: 14px;
+        border: none;
+        font-weight: 600;
+        background: #e3bf3e;
+        color: white;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    #next-btn:hover {
+        background:#b4962c;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 145, 77, 0.25);
+    }
+
+    #next-btn:disabled {
+        background: #f3d2c3;
+        cursor: not-allowed;
+    }
+
+    #score {
+        margin-top: 15px;
+        font-weight: 600;
+        color: #555;
+    }
+</style>
+
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz Application</h1>
+        <h3 id="playerbox">Player :</h3>
+        <div id="question">Loading question...</div>
+        <div id="options"></div>
+        <button id="next-btn" onclick="nextQuestion()" >Next Question</button>
+        <div id="score">Score: 0</div>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>

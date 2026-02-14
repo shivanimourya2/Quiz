@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Which HTML tag is used to define the largest heading?",
+        "options": ["<h1>", "<h2>", "<h3>", "<h4>"],
+        "correct": 0
+    },
+    {
+        "question": "Which CSS property is used to change the text color?",
+        "options": ["font-color", "text-color", "color", "background-color"],
+        "correct": 2
+    },
+    {
+        "question": "Which HTML element is used to define a paragraph?",
+        "options": ["<h1>", "<p>", "<div>", "<span>"],
+        "correct": 1
+    },
+    {
+        "question": "What does HTML stand for?",
+        "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyper Transfer Markup Language", "HyperText Machine Language"],
+        "correct": 0
+    },
+    {
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "options": ["<style>", "<script>", "<css>", "<link>"],
+        "correct": 0
+    },
+    {
+        "question": "Which property is used to change the background color in CSS?",
+        "options": ["color", "background-color", "bg-color", "background"],
+        "correct": 1
+    },
+    {
+        "question": "What does CSS stand for?",
+        "options": ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets", "Cascading Sheet Styles"],
+        "correct": 0
+    },
+    {
+        "question": "Which of the following is a valid JavaScript variable declaration?",
+        "options": ["let x = 10;", "var x = 10;", "const x = 10;", "All of the above"],
+        "correct": 3
+    },
+    {
+        "question": "Which event occurs when the user clicks on an HTML element?",
+        "options": ["onmouseover", "onclick", "onchange", "onkeydown"],
+        "correct": 1
+    },
+    {
+        "question": "What is the correct syntax to link an external JavaScript file in HTML?",
+        "options": ["<script src='file.js'></script>", "<javascript src='file.js'></javascript>", "<link src='file.js'>", "<script href='file.js'></script>"],
+        "correct": 0
+    }
+]
